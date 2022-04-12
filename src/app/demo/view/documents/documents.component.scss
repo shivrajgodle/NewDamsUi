@@ -1,0 +1,24 @@
+::ng-deep .uploadButton{
+    float: right;
+}
+
+
+::ng-deep .innerCard{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(253, 222, 181, 0.933);
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+::ng-deep .section{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+::ng-deep .descriptipn{
+    color: rgb(211, 59, 72);
+    font-weight: 600;
+}

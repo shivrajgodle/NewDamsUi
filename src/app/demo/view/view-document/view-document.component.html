@@ -1,0 +1,28 @@
+<div class="title">
+    {{documentData.title}}
+</div>
+<hr>
+<div class="container">
+    <div class="p-grid">
+        <div class="p-col-6 firstSection">
+            <div class="desc">Description:</div>
+            <i>{{documentData.description}}</i>
+        </div>
+        <div class="p-col-6">
+            <p-table [value]="versions" responsiveLayout="scroll" styleClass="table">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Version</th>
+                        <th>Download</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-version>
+                    <tr>
+                        <td (click)="onClickVesrion(version.version)" style="cursor: pointer;"><a><u>{{version.version}}</u></a></td>
+                        <td><button pButton><i class="pi pi-download"></i></button></td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>

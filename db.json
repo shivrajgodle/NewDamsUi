@@ -1,0 +1,291 @@
+{
+    "documents": [
+        {
+            "id": 1,
+            "title": "Praposal for CIT Project",
+            "authorBy": "Anudit",
+            "type": "Accounting Manual",
+            "description": "The objective of this document is to detail the business requirements relevant to the CIT Platform which will be developed to perform Taxation. The CIT Platform will serve as a delivery engine to provide managed Taxation and analytics services such as :1)Client Master 2)Document Management 3)Recouncilation 4)Report Generator"
+        },
+        {
+            "id": 2,
+            "title": "Praposal for Audit Project",
+            "authorBy": "Akshay",
+            "type": "Policy guidelines",
+            "description": "The objective of this document is to detail the business requirements relevant to the RAS Audit Management Tool (RAS-AMT) which will be developed to perform Internal Audits. The RAS-AMT will serve as a delivery engine to provide managed internal audit and analytics services such as: 1) Risk Assesment 2) Audit Planning  3)Audit Execution"
+        },
+        {
+            "id": 3,
+            "title": "Praposal for Deals Project",
+            "authorBy": "Shivraj",
+            "type": "Resource Manual",
+            "description": "The objective of this document is to detail the business requirements relevant to the PwC Digital Accounting Manuals Platform (PwC DAMs) which will be developed to save, upload and make available to the users accounting manuals. The Digital Accounting Manual platform will serve as a delivery engine to provide managed accounting rules and documents services such as: 1) Centralized accounting standards view 2) User friendly interface for browsing and exporting accounting standards 3)Organizing and indexing content as per the user’s requirements"
+        }
+    ],
+    "versions": [
+        {
+            "document": "Praposal for CIT Project",
+            "versions": [
+                { "version": "V1.0" },
+                { "version": "V1.1" },
+                { "version": "V1.2" }
+            ]
+        },
+        {
+            "document": "Praposal for Audit Project",
+            "versions": [
+                { "version": "V2.0" },
+                { "version": "V2.1" },
+                { "version": "V2.2" }
+            ]
+        },
+        {
+            "document": "Praposal for Deals Project",
+            "versions": [
+                { "version": "V3.0" },
+                { "version": "V3.1" },
+                { "version": "V3.2" }
+            ]
+        }
+    ],
+    "sections": [
+        {
+            "version": "V1.0",
+            "sections": [
+                { "section": "Client Master" },
+                { "section": "Document Processing" },
+                { "section": "Project Management" }
+            ]
+        },
+        {
+            "version": "V1.1",
+            "sections": [
+                { "section": "Reporting Service" },
+                { "section": "Reconciliation" }
+            ]
+        },
+        {
+            "version": "V1.2",
+            "sections": [
+                { "section": "Reusable Component" },
+                { "section": "Reconciliation" },
+                { "section": "Project Management" }
+            ]
+        },
+        {
+            "version": "V2.0",
+            "sections": [
+                { "section": "Workspace" },
+                { "section": "Dashboard" },
+                { "section": "Precision System Integration" },
+                { "section": "Client Master" },
+                { "section": "Reporting" }
+            ]
+        },
+        {
+            "version": "V2.1",
+            "sections": [
+                { "section": "Client Active Directory Integration" },
+                { "section": "Follow-up" },
+                { "section": "Reporting" }
+            ]
+        },
+        {
+            "version": "V2.2",
+            "sections": [
+                { "section": "Audit Planning" },
+                { "section": "RASM" },
+                { "section": "Audit Execution" },
+                { "section": "Reporting" }
+            ]
+        },
+
+        {
+            "version": "V3.0",
+            "sections": [
+                { "section": "Authentication" },
+                { "section": "Dashboards" },
+                { "section": "Product Master" },
+                { "section": "Client Master" }
+            ]
+        },
+        {
+            "version": "V3.1",
+            "sections": [
+                { "section": "Dashboard" },
+                { "section": "Authentication" }
+            ]
+        },
+        {
+            "version": "V3.2",
+            "sections": [{ "section": "Dashboard" }, { "section": "Deals" }]
+        }
+    ],
+    "keywords": [
+        {
+            "section": "Audit Execution",
+            "keywords": [
+                {
+                    "keyword": "login",
+                    "frequency": "4"
+                },
+                { "keyword": "dashboard", "frequency": "3" },
+                { "keyword": "PM", "frequency": "5" },
+                { "keyword": "assigned Projects", "frequency": "2" },
+                { "keyword": "risk", "frequency": "7" },
+                { "keyword": "control", "frequency": "6" },
+                { "keyword": "frequency", "frequency": "3" },
+                { "keyword": "type of control", "frequency": "1" },
+                { "keyword": "RACM", "frequency": "2" },
+                { "keyword": "IA", "frequency": "4" },
+                { "keyword": "auditee", "frequency": "5" }
+            ],
+            "entities": [
+                {"entity": "auditor","type": "pwc employee"},
+                {"entity": "PM","type": "pwc employee"},
+                {"entity": "USA","type": "Country"},
+                {"entity": "Risk","type": "issue"},
+                {"entity": "data request","type": "section"},
+                {"entity": "bulk upload","type": "functionality"}
+            ],
+            "versions": [
+              { "version": "V3.0.0" },
+              { "version": "V3.0.1" },
+              { "version": "V3.0.2" }
+          ]
+        },
+        {
+            "section": "Audit Planning",
+            "keywords": [
+                { "keyword": "PM", "frequency": "3" },
+                { "keyword": "Partner", "frequency": "1" },
+                { "keyword": "entity", "frequency": "5" },
+                { "keyword": "location", "frequency": "4" },
+                { "keyword": "department", "frequency": "6" },
+                { "keyword": "processes", "frequency": "2" },
+                { "keyword": "subprocesses", "frequency": "6" },
+                { "keyword": "timeline", "frequency": "1" },
+                { "keyword": "calendars", "frequency": "2" },
+                { "keyword": "schedule", "frequency": "4" },
+                { "keyword": "plan", "frequency": "6" },
+                { "keyword": "assign auditee", "frequency": "2" }
+            ],
+            "entities": [
+                {"entity": "auditor","type": "pwc employee"},
+                {"entity": "PM","type": "pwc employee"},
+                {"entity": "USA","type": "Country"},
+                {"entity": "Risk","type": "issue"},
+                {"entity": "data request","type": "section"},
+                {"entity": "bulk upload","type": "functionality"}
+            ],
+            "versions": [
+              { "version": "V2.0.0" },
+              { "version": "V2.0.1" },
+              { "version": "V2.0.2" }
+          ]
+        },
+        {
+            "section": "Authentication",
+            "keywords": [
+                { "keyword": "login", "frequency": "1" },
+                { "keyword": "analyst admin", "frequency": "3" },
+                { "keyword": "master admin", "frequency": "6" },
+                { "keyword": "clients", "frequency": "4" }
+            ],
+            "entities": [
+                {"entity": "auditor","type": "pwc employee"},
+                {"entity": "PM","type": "pwc employee"},
+                {"entity": "USA","type": "Country"},
+                {"entity": "Risk","type": "issue"},
+                {"entity": "data request","type": "section"},
+                {"entity": "bulk upload","type": "functionality"}
+            ],
+            "versions": [
+              { "version": "V1.0.0" },
+              { "version": "V1.0.1" },
+              { "version": "V1.0.2" }
+          ]
+        },
+        {
+            "section": "Client Active Directory Integration",
+            "keywords": [
+                { "keyword": "login", "frequency": "2" },
+                { "keyword": "client", "frequency": "1" },
+                { "keyword": "integration", "frequency": "3" },
+                { "keyword": "project code", "frequency": "2" },
+                { "keyword": "task code", "frequency": "1" }
+            ],
+            "entities": [
+                {"entity": "auditor","type": "pwc employee"},
+                {"entity": "PM","type": "pwc employee"},
+                {"entity": "USA","type": "Country"},
+                {"entity": "Risk","type": "issue"},
+                {"entity": "data request","type": "section"},
+                {"entity": "bulk upload","type": "functionality"}
+            ]
+        },
+        {
+            "section": "Client Master",
+            "keywords": [
+                { "keyword": "client creation", "frequency": "3" },
+                { "keyword": "client specific", "frequency": "1" },
+                { "keyword": "client basic", "frequency": "2" },
+                { "keyword": "letter of engagement", "frequency": "5" },
+                { "keyword": "auditor domain", "frequency": "4" },
+                { "keyword": "orgaization structure", "frequency": "6" }
+            ],
+            "entities": [
+                {"entity": "auditor","type": "pwc employee"},
+                {"entity": "PM","type": "pwc employee"},
+                {"entity": "USA","type": "Country"},
+                {"entity": "Risk","type": "issue"},
+                {"entity": "data request","type": "section"},
+                {"entity": "bulk upload","type": "functionality"}
+            ]
+        },
+        {
+            "section": "Follow-up",
+            "keywords": [
+                { "keyword": "IA head", "frequency": "3" },
+                { "keyword": "project manager", "frequency": "4" },
+                { "keyword": "audit executive", "frequency": "1" },
+                { "keyword": "issue triggered", "frequency": "2" },
+                { "keyword": "issue closed", "frequency": "6" },
+                { "keyword": "issue tracked", "frequency": "7" },
+                { "keyword": "process", "frequency": "2" },
+                { "keyword": "subprocess", "frequency": "3" },
+                { "keyword": "query raised", "frequency": "1" },
+                { "keyword": "query response", "frequency": "3" },
+                { "keyword": "issues", "frequency": "5" }
+            ],
+            "entities": [
+                {"entity": "auditor","type": "pwc employee"},
+                {"entity": "PM","type": "pwc employee"},
+                {"entity": "USA","type": "Country"},
+                {"entity": "Risk","type": "issue"},
+                {"entity": "data request","type": "section"},
+                {"entity": "bulk upload","type": "functionality"}
+            ]
+        },
+        {
+            "section": "Product Master",
+            "keywords": [
+                { "keyword": "admin", "frequency": "2" },
+                { "keyword": "individual product", "frequency": "1" },
+                { "keyword": "upload", "frequency": "5" },
+                { "keyword": "verify", "frequency": "1" },
+                { "keyword": "publish", "frequency": "4" },
+                { "keyword": "report", "frequency": "2" },
+                { "keyword": "frequency", "frequency": "3" }
+            ],
+            "entities": [
+                {"entity": "auditor","type": "pwc employee"},
+                {"entity": "PM","type": "pwc employee"},
+                {"entity": "USA","type": "Country"},
+                {"entity": "Risk","type": "issue"},
+                {"entity": "data request","type": "section"},
+                {"entity": "bulk upload","type": "functionality"}
+            ]
+        }
+    ]
+}

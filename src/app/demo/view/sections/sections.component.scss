@@ -1,0 +1,21 @@
+.css-serial {
+    counter-reset: serial-number; /* Set the serial number counter to 0 */
+}
+
+.css-serial td:first-child:before {
+    counter-increment: serial-number; /* Increment the serial number counter */
+    content: counter(serial-number); /* Display the counter */
+}
+
+
+.section{
+    cursor: pointer;
+    color: blueviolet;
+    font-size: large;
+}
+
+.keyword{
+    cursor: pointer;
+    color: brown;
+    font-size:medium;
+}

@@ -1,0 +1,18 @@
+<p-toolbar>
+    <button pButton (click)="onUpload()" label=" Upload Document"><i class="pi pi-plus">&nbsp;</i></button>
+</p-toolbar>
+<p-card styleClass="outerCard">
+    <div *ngFor="let data of documents">
+        <p-card styleClass="innerCard" (dblclick)="onClickDocument(data.id)" >
+            <h1> {{data.title}}</h1>
+            <b> Type of Document: </b><i><label>{{data.type}}</label></i><br><br>
+            <b> Author By: </b> <label>{{data.authorBy}}</label><br><br>
+            <b>Desription: </b>  <label class="descriptipn"><i>{{data.description}}</i></label>
+        </p-card>
+    </div>
+</p-card>
+
+<p-dialog [(visible)]="uploadDialog">
+    <h3>Upload documents Here</h3>
+    <p-fileUpload name="myfile[]" [customUpload]="true" (uploadHandler)="myUploader($event)"></p-fileUpload>
+</p-dialog>

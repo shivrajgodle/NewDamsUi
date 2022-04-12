@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="p-grid">
+        <div class="p-col-3">
+            <p-table class="css-serial" [value]="sections" responsiveLayout="scroll">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Sr. No</th>
+                        <th>Sections</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-section>
+                    <tr>
+                        <td></td>
+                        <td (click)="onClickSection(section.section)" class="section">{{section.section}}</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+
+        <div class="p-col-9" >
+
+            <p-tabView>
+                <p-tabPanel header="Keywords">
+                    <p-table class="css-serial" [value]="keywords" responsiveLayout="scroll">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th>Sr. No</th>
+                                <th>Keyword</th>
+                                <th>Frequency</th>
+                                <th>Boost</th>
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-keyword>
+                            <tr>
+                                <td></td>
+                                <td (click)="onClickKeyword(keyword.keyword)" class="keyword">{{keyword.keyword}}</td>
+                                <td>{{keyword.frequency}}</td>
+                                <td></td>
+                            </tr>
+                        </ng-template>
+                    </p-table>
+                </p-tabPanel>
+                <p-tabPanel header="Entity">
+                    <p-table class="css-serial" [value]="entities" responsiveLayout="scroll">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th>Sr. No</th>
+                                <th>Entity</th>
+                                <th>Type</th>
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-entities>
+                            <tr>
+                                <td></td>
+                                <td (click)="onClickKeyword(entities.entity)" class="entity">{{entities.entity}}</td>
+                                <td>{{entities.type}}</td>
+                            </tr>
+                        </ng-template>
+                    </p-table>
+                </p-tabPanel>
+            </p-tabView>
+        </div>
+        <nav class="bottomToolbar">
+                
+        </nav>
+
+    </div>
+</div>
